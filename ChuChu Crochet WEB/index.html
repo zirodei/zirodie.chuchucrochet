@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChuchuCrochet — Handcrafted Crochet Goods</title>
+  <link rel="stylesheet"
+  href="style.css"
+  meta name="description" content="ChuchuCrochet — handmade crochet toys, accessories, and home decor. Custom orders welcome." />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#957C62; 
+      --accent-2:#e4c591;
+      --muted:#ffffff;
+      --bg:lch(65.5% 19.9 67.4);
+      --card:#ffffff;
+      --radius:14px;
+      --addtocart:#F39189;
+      --buynow:#EA2C62;
+      --letters:#0000;
+      --shadow: 0 10px 28px rgba(18,18,18,0.08);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#33220f;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:rgb(122, 87, 54);font-weight:700;box-shadow:var(--shadow)}
+    nav{display:flex;gap:18px;align-items:center}
+    a.navlink{color:inherit;text-decoration:none;font-weight:600}
+    a.cta{background:var(--accent);color:rgb(255, 255, 255);padding:10px 14px;border-radius:10px;text-decoration:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .hero .eyebrow{color:var(--muted);font-weight:600}
+    .hero h1{font-size:38px;margin:8px 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .hero .hero-actions{display:flex;gap:12px}
+    .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:18px}
+    .card{background:var(--card);padding:12px;border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px}
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    .price{font-weight:700}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:26px 0}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+    
+
+    /* About & Contact */
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0}
+    form{background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow)}
+    input,textarea,button{width:100%;padding:10px;border-radius:8px;border:1px solid #eee}
+    button{background:var(--accent);color:white;border:none;padding:12px;font-weight:600;cursor:pointer}
+
+    /* Footer */
+    footer{padding:24px 0;color:var(--muted);font-size:14px}
+    .socials{display:flex;gap:10px}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .two-col{grid-template-columns:1fr}
+    }
+    @media (max-width:480px){
+      .cards{grid-template-columns:1fr}
+      .gallery img{height:90px}
+      header{padding:10px 0}
+      .logo{width:48px;height:48px}
+      .hero h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+    <script scr="script.js"></script>
+ <header class="container">
+    <div class="brand">
+      <div class="logo"><img src="logo.jpg" alt="Logo Pic" height="60" width="60"
+        style="border-radius: 12px;"
+        style="object-fit: cover;" />
+    
+    </div>
+      <div>
+        <div style="font-weight:700">ChuchuCrochet</div>
+        <div style="font-size:13px;color:var(--muted)">Handmade with love</div>
+      </div>
+    </div>
+    <nav>
+      <a class="navlink" href="#cards" >Products</a>
+      <a class="navlink" href="#gallery">Gallery</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#contact">Contact</a>
+      <a class="cta" href="OrderPage.html">Order</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="cards" class="hero">
+      <div>
+        <div class="eyebrow">Small business • Philippines</div>
+        <h1>Soft, colorful, handcrafted crochet toys & accessories</h1>
+        <p>ChuchuCrochet makes adorable amigurumi, cozy beanies, and one-of-a-kind home decor. Custom orders welcome — we ship locally and internationally.</p>
+        <div class="hero-actions">
+          <a href="#products" class="cta">Shop Bestsellers</a>
+          <a style="margin-top: 10px;" href="OrderPage.html" class="navlink">Custom Order</a>
+        </div>
+
+        <div class="cards" style="margin-top:20px">
+<!--PIC 1-->
+          <article class="card">
+            <img src="pic4.jpg" alt="Amigurumi Bear" />
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700; margin-right: 10px;">Sundrop boquet</div>
+                <div class="price">₱----</div>
+                <div style="font-size:13px;color:var(--muted)">Stress Sunflower, 20cm</div>
+            </div>
+            <div>
+
+             <button type="submit"
+            style="margin-top:10px; margin-bottom: 10px ;background-color: #95CD41; height: 5; width: 10;">Notify Me</button>
+
+            </div>
+            </div>
+          </article>
+<!--PIC 2-->
+          <article class="card">
+            <img src="pic2.jpg" alt="Beanie" />
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700">Red Spider Lilies</div>
+                <div class="price">₱----</div>
+                <div style="font-size:13px;color:var(--muted)">One size, acrylic</div>
+              </div>
+              <div>
+
+              <button type="submit"
+            style="margin-top:10px; margin-bottom: 10px ;background-color: #95CD41; height: 5; width: 10;">Notify Me</button>
+
+            </div>
+            </div>
+          </article>
+<!--PIC 3-->
+          <article class="card">
+            <img src="pic3.jpg" alt="Beanie" />
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700">SunTulips</div>
+                <div class="price">₱----</div>
+                <div style="font-size:13px;color:var(--muted)">One size, acrylic</div>
+              </div>
+              <div>
+
+              <button type="submit"
+            style="margin-top:10px; margin-bottom: 10px ;background-color: #95CD41; height: 5; width: 10;">Notify Me</button>
+
+            </div>
+            </div>
+          </article>
+<!--PIC 4-->
+          <article class="card">
+            <img src="pic1.jpg" alt="Beanie" />
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700">Sunflower Stress</div>
+                <div class="price">₱----</div>
+                <div style="font-size:13px;color:var(--muted)">One size, acrylic</div>
+              </div>
+              <div>
+
+              <button type="submit"
+            style="margin-top:10px; margin-bottom: 10px ;background-color: #95CD41; height: 5; width: 10;">Notify Me</button>
+            
+            </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      
+<!--GOLDEN BOX-->
+      <aside style="background:linear-gradient(180deg,var(--accent-2),#b68b4f);padding:18px;border-radius:12px;box-shadow:var(--shadow)">
+        <h3 style="margin:0 0 10px">Why ChuchuCrochet?</h3>
+        <ul style="margin:0;padding-left:18px;color:black(--muted)">
+          <li>100% handmade</li> 
+          <li>Eco-friendly materials available</li>
+          <li>Custom colors & sizes</li>
+          <li>Gift wrapping on request</li>
+        </ul>
+        <div style="margin-top:14px">
+          <a class="cta" href="#contact">Request a Quote</a>
+        </div>
+      </aside>
+    </section>
+<!--GALLERY-->
+    <section id="gallery">
+      <h2 style="margin-bottom:8px">Gallery</h2>
+      <div class="gallery" aria-hidden="false">
+        <img src="pic1.jpg" alt="product photo 1">
+        <img src="pic2.jpg" alt="product photo 2">
+        <img src="pic3.jpg" alt="product photo 3">
+        <img src="pic4.jpg" alt="product photo 4">     
+      </div>
+    </section>
+<!--ABOUT US-->
+    <section id="about" class="two-col">
+      <div>
+        <h2>General Information</h2>
+        <p>Chuchucrochet specializes in handmade crochet items. As each piece is crafted individually, slight variations in size, colors and texture may occur, making each item unique.
+These terms and conditions govern your use of our services and products.</p>
+ <h2>orders</h2>
+ <p>All orders are subject to availability. Certain items may have intended stock or require custom creation.
+Custom orders may require additional time and production. The estimated timeline will be communicated during the ordering process.</p>
+<h2>Payment Method</h2>
+<p>Payment is required in full to our on hand items when placing an order.
+Accepted payment methods include [G-cash, Metrobank & BDO
+For custom orders, a [non-refundable deposit or full payment] may be required upfront.</p>
+<h2>Shipping And Delivery</h2>
+<p>Orders will be shipped after payment confirmation unless stated otherwise.
+Shipping fees are calculated based on the destination and weight of the package.
+We are not responsible for delays caused by shipping carriers.</p>
+<h2>Returns And Refunds</h2>
+<p>No returns or exchanges, as our items are handmade.
+If an item is damaged or defective, contact us immediately within 1 day with photos for review.</p>
+<h2>Custom Orders</h2>
+<p>Custom orders are made based on your requests. Once we start making it, no changes can be made.</p>
+<h2>Care Instructions</h2>
+<p>Follow the care instructions provided to keep your crochet items in good condition.</p>
+        <p style="color:var(--muted);font-size:14px">Handmade in the Philippines • Instagram-friendly • adorable and cutesy</p>
+      </div>
+      <div>
+        <h3>Featured Services</h3>
+        <ul style="padding-left:18px;color:var(--muted)">
+          <li>Custom plush orders</li>
+          <li>Bulk orders for events & giveaways</li>
+          <li>Workshops and private lessons (online/in-person)</li>
+        </ul>
+      </div>
+    </section>
+<!--CONTACTS-->
+    <section id="contact">
+      <h2>Contact / Custom Order</h2>
+      <div class="two-col">
+        <div>
+          <p>If you'd like a custom order or have questions, send a message here or reach out on social.</p>
+          <p style="color:var(--muted)"><strong>Email:</strong> chuchucrochet@gmail.com.<br><strong>Phone (viber):</strong> +63 920 658 0881</p>
+          <div class="socials">
+            <a style="color: #33220f;" href="https://www.instagram.com/_chuchucrochet?igsh=MWg4aDNkeTFnYmw5bA==">Instagram</a>
+            <a style="color: #33220f;" href="https://web.facebook.com/profile.php?id=61563387853435">Facebook</a>
+            <a style="color: #33220f;" href="https://web.facebook.com/reiangel.firmeza03?mibextid=ZbWKwL&_rdc=1&_rdr">Personal profile</a>
+          </div>
+        </div>
+<!--WHITE BOX--> 
+      </div>
+    </section>
+
+    <section id="order" style="margin-top:22px">
+      <h2>How to Order</h2>
+      <ol style="color:var(--muted)">
+        <li>Click Order Button at the top of the screen</li>
+        <li>Choose a product or request a custom design.</li>
+        <li>Confirm colors, size, and quantity.</li>
+        <li>We send an invoice and ship when payment is complete.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© <strong>ChuchuCrochet</strong> <span id="year"></span> — handcrafted with care</div>
+      <div style="font-size:13px;color:var(--muted)">Made with ❤️ • Local pickup & shipping available</div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
